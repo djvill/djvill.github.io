@@ -11,8 +11,9 @@
         </div>
       {% endif %}
       <p class="copyright text-muted">
-      {% if site.author %}
-        {{ site.author }}
+      {% if site.author.name %}
+		©
+        {{ site.author.name }}
         &nbsp;&bull;&nbsp;
       {% endif %}
       {{ site.time | date: '%Y' }}
