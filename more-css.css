@@ -1,0 +1,12 @@
+#strands li:nth-child(1) {
+	list-style-image: url('assets/img/NYCS-bull-trans-1.svg');
+	list-style-type: decimal;
+}
+#strands li:nth-child(2) {
+	list-style-image: url('assets/img/NYCS-bull-trans-2.svg')
+	list-style-type: decimal;
+}
+#strands li:nth-child(3) {
+	list-style-image: url('assets/img/NYCS-bull-trans-3.svg')
+	list-style-type: decimal;
+}
