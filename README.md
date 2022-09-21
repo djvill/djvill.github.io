@@ -8,6 +8,6 @@ This document mostly exists as a how-to for Dan.
 
 | If you want to | Then    |
 |----------------|---------|
-| Change top-bar navigation | Edit `navbar-links:` in [_config.yml] |
+| Change top-bar navigation | Edit `navbar-links:` in [`_config.yml`](_config.yml) |
 | Serve the page locally (view it without pushing to GitHub) | Open `docs/` in Bash, then `bundle exec jekyll serve` |
 
