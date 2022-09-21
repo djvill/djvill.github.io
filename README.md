@@ -1,21 +1,32 @@
 # `djvill.github.io`: Dan Villarreal's personal website
 
-This repository powers Dan Villarreal's personal website, <https://djvill.github.io/>.
+*Dan Villarreal*
+
+This repository powers my personal website, <https://djvill.github.io/>.
 The website is hosted by GitHub Pages and built using Jekyll.
 It is based on Dean Attali's [Beautiful Jekyll](https://github.com/daattali/beautiful-jekyll) theme.
+Most of the code that powers this website is from Beautiful Jekyll; 
+I've tweaked around the edges to make it work for me.
 
-This document mostly exists as a how-to for Dan's own reference.
+This document mostly exists as a how-to for my own reference.
 
 ## How to edit website
 
 | If you want to | Then    |
 |----------------|---------|
-| Change styling | Edit [`assets/css/more-css.css`](assets/css/more-css.css) |
 | Edit page content | Edit the corresponding `.md` file in the root directory |
 | Add a page | Add a new `.md` file in the root directory, include a [YAML header](https://github.com/daattali/beautiful-jekyll#supported-parameters), and add to top-bar navigation |
-| Serve the page locally (view it without pushing to GitHub) | Open `docs/` in Bash, then `bundle exec jekyll serve` (or shortcut `jek` on work laptop) |
+| Change styling | Edit [`assets/css/more-css.css`](assets/css/more-css.css) |
+| Add JS | Edit [`assets/js/more-js.js`](assets/js/more-js.js) |
+| Serve the page locally (view it without pushing to GitHub) | Open `docs/` in Bash, `bundle exec jekyll serve` (or shortcut `jek` on work laptop), in browser `localhost:4000`. FYI, this requires having Ruby installed locally; the needed Ruby gems can be installed with `bundle install` in Bash (only needs to happen once per Beautiful Jekyll update) |
 | Change top-bar navigation | Edit `navbar-links:` in [`_config.yml`](_config.yml) |
 | Update to latest Beautiful Jekyll | Commit changes, `git pull upstream main`, fix merge conflicts (probably in `_config.yml`), delete `Gemfile.lock`, in Bash `bundle install`, add any additional gems to `Gemfile` if needed |
+| Add new local CSS/JS file | Add file(s) to relevant [`assets/`](assets/) subfolder(s), then edit `site-css:` and/or `site-js:` in [`_config.yml`](_config.yml). (If that doesn't work, add to [`_layouts/base.html`](_layouts/base.html) YAML header.) |
+
+
+FYI, the HTML files are written as [Liquid](https://shopify.github.io/liquid/) templates.
+That's where you get things like `{% include nav.html %}`, `{{ content }}`, and even control flow like `{% if page.before-content %}`...`{% endif %}`.
+
 
 
 ## Other notes 
