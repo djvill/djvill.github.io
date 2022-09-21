@@ -21,7 +21,7 @@ This document mostly exists as a how-to for my own reference.
 | Serve the page locally (view it without pushing to GitHub) | Open `docs/` in Bash, `bundle exec jekyll serve` (or shortcut `jek` on work laptop), in browser `localhost:4000`. FYI, this requires having Ruby installed locally; the needed Ruby gems can be installed with `bundle install` in Bash (only needs to happen once per Beautiful Jekyll update) |
 | Change top-bar navigation | Edit `navbar-links:` in [`_config.yml`](_config.yml) |
 | Update to latest Beautiful Jekyll | Commit changes, `git pull upstream main`, fix merge conflicts (probably in `_config.yml`), delete `Gemfile.lock`, in Bash `bundle install`, add any additional gems to `Gemfile` if needed |
-| Add new local CSS/JS file | Add file(s) to relevant [`assets/`](assets/) subfolder(s), then edit `site-css:` and/or `site-js:` in [`_config.yml`](_config.yml). (If that doesn't work, add to [`_layouts/base.html`](_layouts/base.html) YAML header.) |
+| Add new local CSS/JS file | Add file(s) to relevant [`assets/`](assets/) subfolder(s), then edit `site-css:` and/or `site-js:` in [`_config.yml`](_config.yml) |
 
 
 FYI, the HTML files are written as [Liquid](https://shopify.github.io/liquid/) templates.
