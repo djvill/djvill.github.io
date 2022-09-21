@@ -29,7 +29,7 @@ That's where you get things like `{% include nav.html %}`, `{{ content }}`, and 
 
 
 
-## Other notes 
+## An alternative: `academicpages.github.io`
 
 I've also looked into [`academicpages.github.io`](https://github.com/academicpages/academicpages.github.io), which is more geared toward academic websites (e.g., it can turn data about your papers into pages and do other fun things).
 But the upstream hasn't been updated in 3+ years, which required an [extensive process](https://github.com/djvill/academicpages.github.io/commit/7e05ef7473dbdc28a211eae755279d22947070d8) of updating the underlying [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/) and a bunch of JS plugins; 
@@ -37,6 +37,7 @@ I even installed Node.js just to [build the JS dependencies](https://mmistakes.g
 I also found Minimal Mistakes really hard to use;
 it's built on a lot of [SCSS stylesheets](https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/), so for example you can't even edit the CSS directly, you have to look at the CSS compiled from SCSS.
 And weirdly, it doesn't have things like [navigation sublinks](https://github.com/mmistakes/minimal-mistakes/issues/1960#issuecomment-440358390).
+Finally, some part of the page took *forever* (~15 seconds) to re-build every time I modified it, which definitely doesn't work for my super-incremental workflow.
 
-I want a data-fied version of this site, but `academicpages.github.io` is not the way to do it.
+In short, while I want a data-fied version of this site, `academicpages.github.io` is not the way to do it.
 Maybe I can borrow some of its code to make the Beautiful Jekyll-based site better suited to an academic page.
