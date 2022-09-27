@@ -27,5 +27,9 @@ Below is a sampling of my current and recent-past research projects, with the st
 
 ## Sociolinguistic auto-coding
 
+<!-- BLURB from start of presentations/LabPhon paper -->
 
+<!-- Discuss each paper, but not bullet-point-wise. It's okay to allot different amounts of space to different papers. -->
+
+<!-- I also don't have to go linearly by paper. I could discuss auto-coding performance across papers in one spot, then gradience in another. -->
 

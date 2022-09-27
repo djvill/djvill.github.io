@@ -15,6 +15,7 @@ This document mostly exists as a how-to for my own reference.
 | If you want to | Then    |
 |----------------|---------|
 | Edit page content | Edit the corresponding `.md` file in the root directory |
+| Edit the homepage | Edit `index.html` (it's actually a markdown file!) |
 | Add a page | Add a new `.md` file in the root directory, include a [YAML header](https://github.com/daattali/beautiful-jekyll#supported-parameters), and add to top-bar navigation |
 | Change styling | Edit [`assets/css/more-css.css`](assets/css/more-css.css) |
 | Add JS | Edit [`assets/js/more-js.js`](assets/js/more-js.js) |
